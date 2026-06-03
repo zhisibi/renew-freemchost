@@ -32,7 +32,7 @@ jobs:
         MY_EMAIL: ${{ secrets.MY_EMAIL }}
         MY_PASSWORD: ${{ secrets.MY_PASSWORD }}
         ANON_KEY: ${{ secrets.ANON_KEY }}
-      run: python renew1.py | tee renew.log
+      run: python renew.py | tee renew.log
 
     # 5. 发送 TG 通知 (精准抓取 Python 提取到的到期时间)
     - name: Send Telegram Notification
