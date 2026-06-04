@@ -2,7 +2,7 @@ name: Server Auto Renew
 
 on:
   schedule:
-    - cron: '37 4 * * *' # 每天北京时间 12:37 自动运行
+    - cron: '37 05 * * *' # 每天北京时间 12:37 自动运行
   workflow_dispatch: # 允许手动点击运行
 
 jobs:
